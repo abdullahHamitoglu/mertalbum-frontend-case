@@ -55,7 +55,7 @@ function App() {
   }, [characters]);
   return (
     <div className="App flex justify-center p-3">
-      <div className="flex flex-wrap justify-items-center w-96">
+      <div className="flex flex-wrap justify-items-center w-96" onMouseEnter={() => setShow(true)} onMouseLeave={()=>{setShow(false)}}>
         <div className="w-full flex flex-row bg-white border-2 border-gray-400 rounded-2xl py-2 px-3 placeholder:text-gray-600 relative">
           <div className="max-w-2/3 flex flex-nowrap gap-2 overflow-y-scroll no-scrollbar flex-grow-0">
             {selectedCharacters.map((character: Characters) => (
