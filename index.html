@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MertAlbüm Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container mx-auto py-5">
+
+        <div class="bg-orange-200 p-2 m-3 rounded-2xl">
+            <h1 class="text-md mb-2 text-gray-600 ms-4">Kategoriler</h1>
+            <ul class="flex gap-3 flex-nowrap overflow-y-scroll bg-orange-300 p-2 rounded-xl" id="category-list"></ul>
+        </div>
+        <ul class="grid grid-cols-2 md:grid-cols-5 gap-3 m-3" id="product-list"></ul>
+        <label class="bg-orange-200 p-2 m-3 rounded-xl">
+            <input type="checkbox" class="switch">
+            Get data From Website
+        </label>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./scripts.js"></script>
+</body>
+
+</html>
